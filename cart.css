@@ -1,0 +1,10 @@
+body{
+    background-color: #fff;
+    border: solid 2px #fff;
+    width:100%;
+    height:1000px;
+    box-shadow:
+      inset 60px 0 120px rgb(232, 162, 250),  /* left magenta */
+      inset -60px 0 120px rgb(184, 250, 250); /* right cyan */
+    
+}

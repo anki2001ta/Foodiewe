@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="register.css">
+
+    <style>
+        marquee{
+            text-align: center;
+            margin-right:35px ;
+            direction:"right" ;
+            font-size:30px ;
+            margin-top:10px ;
+           
+            color: rgb(147, 54, 150);
+         text-align: center;
+         -webkit-animation: glow 1s ease-in-out infinite alternate;
+         -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    
+        }
+        @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a00e80, 0 0 40px #1d73a5, 0 0 50px #273cfc, 0 0 60px #3ac9ec, 0 0 70px #30dde9;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #0d2cda, 0 0 40px #43d1db, 0 0 50px #f34fdd, 0 0 60px #fc66fc, 0 0 70px #5721eec9, 0 0 80px #0a438d;
+    }
+  }
+    </style>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <div id="inp">
+    <input type="password" id="password" placeholder="Enter Your Password here" >
+    <input type="text" id="username" placeholder="Enter your username">
+    <button onclick="login()">LOGIN HERE</button>
+    <marquee> THANKS FOR LOGIN:)ENJOY YOUR MEAL</marquee>
+</div>
+
+    
+</body>
+</html>
+
+<script type="module">
+    import navbar from "./navbar.js"
+    let cont=document.querySelector("#box")
+    cont.innerHTML=navbar();
+        </script>
+<script src="./scripts/login.js"></script>
